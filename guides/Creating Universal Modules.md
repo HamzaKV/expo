@@ -20,7 +20,7 @@ This guide will explain how to create a universal module and integrate it into E
   5. when it comes to Cocoapods name: `expo-module-name-something` => `EXModuleNameSomething`
   6. when it comes to Java module name:
     1. implementation module — `expo.modules.something`
-    2. interface module — `expo.interfaces.something`
+    2. interface module — `org.unimodules.interfaces.something`
     3. platform adapter — `expo.adapters.something`
     4. scoped modules (eg. analytics) — `expo.modules.scope.something`, eg. `expo.modules.analytics.segment`
 4. Great! You should have a new directory created in `packages` named properly.

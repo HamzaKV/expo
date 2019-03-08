@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>host.exp.exponent</groupId>
-  <artifactId>expo-constants-interface</artifactId>
+  <artifactId>unimodules-constants-interface</artifactId>
   <versioning>
     <release>2.0.0</release>
     <versions>

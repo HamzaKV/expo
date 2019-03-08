@@ -64,8 +64,8 @@ if (new File(rootProject.projectDir.parentFile, 'package.json').exists()) {
 }
 
 dependencies {
-    expendency "expo-core"
-    expendency "expo-firebase-app"
-    expendency "expo-firebase-links"
+    unimodule "expo-core"
+    unimodule "expo-firebase-app"
+    unimodule "expo-firebase-links"
     compileOnly "com.google.android.gms:play-services-base:15.0.1"
 }

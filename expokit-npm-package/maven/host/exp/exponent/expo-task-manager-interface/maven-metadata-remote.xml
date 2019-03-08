@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>host.exp.exponent</groupId>
-  <artifactId>expo-task-manager-interface</artifactId>
+  <artifactId>unimodules-task-manager-interface</artifactId>
   <versioning>
     <release>1.0.0</release>
     <versions>

@@ -1,4 +1,4 @@
-package expo.core.arguments;
+package org.unimodules.core.arguments;
 
 import android.os.Bundle;
 

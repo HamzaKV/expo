@@ -1,6 +1,6 @@
 package expo.errors;
 
-import expo.core.interfaces.CodedThrowable;
+import org.unimodules.core.interfaces.CodedThrowable;
 
 /**
  * Base class that can be extended to create coded errors that promise.reject

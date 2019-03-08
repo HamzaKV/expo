@@ -21,7 +21,7 @@
     </dependency>
     <dependency>
       <groupId>host.exp.exponent</groupId>
-      <artifactId>expo-permissions-interface</artifactId>
+      <artifactId>unimodules-permissions-interface</artifactId>
       <version>2.0.0</version>
       <scope>compile</scope>
     </dependency>

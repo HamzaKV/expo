@@ -122,18 +122,18 @@ dependencies {
   api 'host.exp.exponent:expo-app-loader-provider:3.0.0'
   api 'host.exp.exponent:expo-core:3.0.1'
   api 'host.exp.exponent:expo-constants:3.0.0'
-  api 'host.exp.exponent:expo-constants-interface:3.0.0'
+  api 'host.exp.exponent:unimodules-constants-interface:3.0.0'
   api 'host.exp.exponent:expo-document-picker:3.0.0'
   api 'host.exp.exponent:expo-errors:3.0.0'
   api 'host.exp.exponent:expo-file-system:3.0.1'
-  api 'host.exp.exponent:expo-file-system-interface:3.0.0'
+  api 'host.exp.exponent:unimodules-file-system-interface:3.0.0'
   api 'host.exp.exponent:expo-permissions:3.0.0'
-  api 'host.exp.exponent:expo-permissions-interface:3.0.0'
+  api 'host.exp.exponent:unimodules-permissions-interface:3.0.0'
   api 'host.exp.exponent:expo-react-native-adapter:3.0.0'
   api 'host.exp.exponent:expo-secure-store:3.0.0'
-  api 'host.exp.exponent:expo-sensors-interface:3.0.0'
+  api 'host.exp.exponent:unimodules-sensors-interface:3.0.0'
   api 'host.exp.exponent:expo-task-manager:3.0.0'
-  api 'host.exp.exponent:expo-task-manager-interface:3.0.0'
+  api 'host.exp.exponent:unimodules-task-manager-interface:3.0.0'
 
   // Optional universal modules
   compileOnly 'host.exp.exponent:expo-ads-admob:3.0.0'
@@ -144,11 +144,11 @@ dependencies {
   compileOnly 'host.exp.exponent:expo-av:3.0.0'
   compileOnly 'host.exp.exponent:expo-background-fetch:3.0.0'
   compileOnly 'host.exp.exponent:expo-barcode-scanner:3.0.0'
-  compileOnly 'host.exp.exponent:expo-barcode-scanner-interface:3.0.0'
+  compileOnly 'host.exp.exponent:unimodules-barcode-scanner-interface:3.0.0'
   compileOnly 'host.exp.exponent:expo-brightness:3.0.0'
   compileOnly 'host.exp.exponent:expo-calendar:3.0.0'
   compileOnly 'host.exp.exponent:expo-camera:3.0.0'
-  compileOnly 'host.exp.exponent:expo-camera-interface:3.0.0'
+  compileOnly 'host.exp.exponent:unimodules-camera-interface:3.0.0'
   compileOnly 'host.exp.exponent:expo-contacts:3.0.0'
   compileOnly 'host.exp.exponent:expo-crypto:3.0.0'
   compileOnly 'host.exp.exponent:expo-face-detector:3.0.0'
@@ -158,7 +158,7 @@ dependencies {
   compileOnly 'host.exp.exponent:expo-gl-cpp:3.0.0'
   compileOnly 'host.exp.exponent:expo-google-sign-in:3.0.0'
   compileOnly 'host.exp.exponent:expo-haptics:3.0.0'
-  compileOnly 'host.exp.exponent:expo-image-loader-interface:3.0.0'
+  compileOnly 'host.exp.exponent:unimodules-image-loader-interface:3.0.0'
   compileOnly 'host.exp.exponent:expo-image-manipulator:3.0.0'
   compileOnly 'host.exp.exponent:expo-image-picker:3.0.0'
   compileOnly 'host.exp.exponent:expo-intent-launcher:3.0.0'
@@ -184,17 +184,17 @@ dependencies {
 
   // Universal modules
   api project(':expo-app-loader-provider')
-  api project(':expo-core')
+  api project(':unimodules-core')
   api project(':expo-constants')
-  api project(':expo-constants-interface')
+  api project(':unimodules-constants-interface')
   api project(':expo-document-picker')
   api project(':expo-errors')
   api project(':expo-permissions')
-  api project(':expo-permissions-interface')
-  api project(':expo-react-native-adapter')
-  api project(':expo-sensors-interface')
+  api project(':unimodules-permissions-interface')
+  api project(':unimodules-react-native-adapter')
+  api project(':unimodules-sensors-interface')
   api project(':expo-task-manager')
-  api project(':expo-task-manager-interface')
+  api project(':unimodules-task-manager-interface')
 
   // Optional universal modules
   // They're defined as "api" so we don't have to define them again in app/build.gradle
@@ -207,23 +207,23 @@ dependencies {
   api project(':expo-av')
   api project(':expo-background-fetch')
   api project(':expo-barcode-scanner')
-  api project(':expo-barcode-scanner-interface')
+  api project(':unimodules-barcode-scanner-interface')
   api project(':expo-brightness')
   api project(':expo-calendar')
   api project(':expo-camera')
-  api project(':expo-camera-interface')
+  api project(':unimodules-camera-interface')
   api project(':expo-contacts')
   api project(':expo-crypto')
   api project(':expo-facebook')
   api project(':expo-face-detector')
   api project(':expo-file-system')
-  api project(':expo-file-system-interface')
+  api project(':unimodules-file-system-interface')
   api project(':expo-font')
   api project(':expo-gl')
   api project(':expo-gl-cpp')
   api project(':expo-google-sign-in')
   api project(':expo-haptics')
-  api project(':expo-image-loader-interface')
+  api project(':unimodules-image-loader-interface')
   api project(':expo-image-manipulator')
   api project(':expo-image-picker')
   api project(':expo-intent-launcher')

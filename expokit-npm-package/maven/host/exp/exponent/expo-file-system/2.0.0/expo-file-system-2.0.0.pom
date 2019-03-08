@@ -15,7 +15,7 @@
     </dependency>
     <dependency>
       <groupId>host.exp.exponent</groupId>
-      <artifactId>expo-file-system-interface</artifactId>
+      <artifactId>unimodules-file-system-interface</artifactId>
       <version>2.0.0</version>
       <scope>compile</scope>
     </dependency>

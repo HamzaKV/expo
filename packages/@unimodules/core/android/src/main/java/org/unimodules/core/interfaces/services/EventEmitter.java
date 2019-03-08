@@ -1,4 +1,4 @@
-package expo.core.interfaces.services;
+package org.unimodules.core.interfaces.services;
 
 import android.os.Bundle;
 

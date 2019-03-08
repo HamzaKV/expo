@@ -1,4 +1,4 @@
-package expo.core.interfaces;
+package org.unimodules.core.interfaces;
 
 import java.util.List;
 import java.util.Map;

@@ -64,8 +64,8 @@ if (new File(rootProject.projectDir.parentFile, 'package.json').exists()) {
 }
 
 dependencies {
-    expendency "expo-core"
-    expendency "expo-firebase-app"
+    unimodule "expo-core"
+    unimodule "expo-firebase-app"
     compileOnly "com.google.android.gms:play-services-base:15.0.1"
     // TODO: Bacon: Remove React - needed for background tasks
     compileOnly "com.facebook.react:react-native:+"

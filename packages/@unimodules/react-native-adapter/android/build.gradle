@@ -57,10 +57,10 @@ android {
 apply from: project(":unimodules-core").file("../unimodules-core.gradle")
 
 dependencies {
-  unimodule 'expo-core'
-  unimodule 'expo-font-interface'
-  unimodule 'expo-permissions-interface'
-  unimodule 'expo-image-loader-interface'
+  unimodule 'unimodules-core'
+  unimodule 'unimodules-font-interface'
+  unimodule 'unimodules-permissions-interface'
+  unimodule 'unimodules-image-loader-interface'
   compileOnly 'com.facebook.react:react-native:+'
 }
   

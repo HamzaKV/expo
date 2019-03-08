@@ -64,9 +64,9 @@ if (new File(rootProject.projectDir.parentFile, 'package.json').exists()) {
 }
 
 dependencies {
-    expendency "expo-core"
-    expendency "expo-firebase-app"
-    expendency "expo-firebase-messaging"
+    unimodule "expo-core"
+    unimodule "expo-firebase-app"
+    unimodule "expo-firebase-messaging"
     compileOnly 'com.facebook.react:react-native:+'
 
 }

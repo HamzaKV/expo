@@ -63,5 +63,5 @@ if (new File(rootProject.projectDir.parentFile, 'package.json').exists()) {
 }
 
 dependencies {
-  expendency "unimodules-core"
+  unimodule "unimodules-core"
 }

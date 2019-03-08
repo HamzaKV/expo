@@ -13,7 +13,7 @@ import com.google.android.gms.location.LocationRequest;
 
 import java.util.Map;
 
-import expo.core.Promise;
+import org.unimodules.core.Promise;
 import expo.errors.CodedException;
 import expo.modules.location.utils.TimeoutObject;
 import io.nlopez.smartlocation.location.config.LocationAccuracy;

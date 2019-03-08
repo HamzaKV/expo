@@ -1,4 +1,4 @@
-package expo.core.interfaces;
+package org.unimodules.core.interfaces;
 
 /**
  * Helper interface to make errors easier to handle. The promise.reject

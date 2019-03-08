@@ -83,7 +83,7 @@ and run `pod install`.
 2. Make your module class implement `InternalModule` interface.
     1. Implement `public List<Class> getExportedInterfaces();`. Return a list of module interfaces implemented by the class, for example:
         ```java
-        return Collections.singletonList((Class) expo.interfaces.filesystem.FileSystem.class);
+        return Collections.singletonList((Class) org.unimodules.interfaces.filesystem.FileSystem.class);
         ```
 3. Create a `Package` class for your module, unless you already have one.
     1. A `Package` class should implement `org.unimodules.Package` interface (a `BasePackage` class is provided for you not to have to implement all the initialization flavors at once).

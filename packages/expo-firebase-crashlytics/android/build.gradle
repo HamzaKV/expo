@@ -69,8 +69,8 @@ if (new File(rootProject.projectDir.parentFile, 'package.json').exists()) {
 }
 
 dependencies {
-    expendency "expo-core"
-    expendency "expo-firebase-app"
+    unimodule "expo-core"
+    unimodule "expo-firebase-app"
     compileOnly "com.google.android.gms:play-services-base:15.0.1"
     compileOnly('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
         transitive = true

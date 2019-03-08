@@ -59,7 +59,7 @@ android {
 }
 
 if (new File(rootProject.projectDir.parentFile, 'package.json').exists()) {
-    apply from: project(":expo-core").file("../expo-core.gradle")
+    apply from: project(":unimodules-core").file("../unimodules-core.gradle")
 } else {
     throw new GradleException(
             "'expo-core.gradle' was not found in the usual Flutter or React Native dependency locations. " +
@@ -67,7 +67,7 @@ if (new File(rootProject.projectDir.parentFile, 'package.json').exists()) {
 }
 
 dependencies {
-    expendency "expo-core"
+    unimodule "unimodules-core"
     api 'com.google.android.gms:play-services-auth:16.0.1'
-    implementation project(path: ':expo-constants-interface')
+    implementation project(path: ':unimodules-constants-interface')
 }

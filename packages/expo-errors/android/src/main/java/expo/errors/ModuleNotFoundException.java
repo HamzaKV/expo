@@ -1,6 +1,6 @@
 package expo.errors;
 
-import expo.core.interfaces.CodedThrowable;
+import org.unimodules.core.interfaces.CodedThrowable;
 
 public class ModuleNotFoundException extends CodedException implements CodedThrowable {
   public ModuleNotFoundException(String moduleName) {

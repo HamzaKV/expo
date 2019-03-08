@@ -116,16 +116,16 @@
     <dependency org="com.facebook.react" name="react-native" rev="32.0.0" conf="api-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-core" rev="2.0.0" conf="api-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-constants" rev="2.0.1" conf="api-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-constants-interface" rev="2.0.0" conf="api-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-constants-interface" rev="2.0.0" conf="api-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-errors" rev="1.0.0" conf="api-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-permissions" rev="2.0.0" conf="api-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-sensors-interface" rev="2.0.0" conf="api-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-permissions-interface" rev="2.0.0" conf="api-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-sensors-interface" rev="2.0.0" conf="api-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-permissions-interface" rev="2.0.0" conf="api-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-react-native-adapter" rev="2.0.0" conf="api-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-file-system" rev="2.0.0" conf="api-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-file-system-interface" rev="2.0.0" conf="api-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-file-system-interface" rev="2.0.0" conf="api-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-task-manager" rev="1.0.0" conf="api-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-task-manager-interface" rev="1.0.0" conf="api-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-task-manager-interface" rev="1.0.0" conf="api-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-app-loader-provider" rev="1.0.0" conf="api-&gt;default"/>
     <dependency org="com.facebook.fresco" name="fresco" rev="1.10.0" conf="api-&gt;default"/>
     <dependency org="com.facebook.fresco" name="animated-gif" rev="1.10.0" conf="api-&gt;default"/>
@@ -188,7 +188,7 @@
     <dependency org="com.squareup.okhttp3" name="okhttp" rev="3.10.0" conf="api-&gt;default"/>
     <dependency org="com.squareup.okhttp3" name="okhttp-urlconnection" rev="3.10.0" conf="api-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-app-auth" rev="2.0.0" conf="compileOnly-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-image-loader-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-image-loader-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-gl" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-gl-cpp" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-sms" rev="2.0.0" conf="compileOnly-&gt;default"/>
@@ -198,7 +198,7 @@
     <dependency org="host.exp.exponent" name="expo-font" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-google-sign-in" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-location" rev="2.0.1" conf="compileOnly-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-barcode-scanner-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-barcode-scanner-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-barcode-scanner" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-contacts" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-ads-admob" rev="2.0.0" conf="compileOnly-&gt;default"/>
@@ -206,13 +206,13 @@
     <dependency org="host.exp.exponent" name="expo-localization" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-react-native-adapter" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-camera" rev="2.0.0" conf="compileOnly-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-camera-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-camera-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-sensors" rev="2.0.0" conf="compileOnly-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-sensors-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-sensors-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-face-detector" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-payments-stripe" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-permissions" rev="2.0.0" conf="compileOnly-&gt;default"/>
-    <dependency org="host.exp.exponent" name="expo-permissions-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
+    <dependency org="host.exp.exponent" name="unimodules-permissions-interface" rev="2.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="host.exp.exponent" name="expo-background-fetch" rev="1.0.0" conf="compileOnly-&gt;default"/>
     <dependency org="com.facebook.soloader" name="soloader" rev="0.5.1" conf="compileOnly-&gt;default"/>
     <dependency org="org.glassfish" name="javax.annotation" rev="3.1.1" conf="compileOnly-&gt;default"/>

@@ -1,6 +1,6 @@
 package expo.modules.intentlauncher.exceptions;
 
-import expo.core.interfaces.CodedThrowable;
+import org.unimodules.core.interfaces.CodedThrowable;
 import expo.errors.CodedException;
 
 public class ActivityAlreadyStartedException extends CodedException implements CodedThrowable {
