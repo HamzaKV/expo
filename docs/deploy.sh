@@ -2,8 +2,6 @@
 
 set -euo pipefail
 
-touch out/versions/latest/introduction/installation.html
-
 aws s3 sync out s3://docs.expo.io --delete
 
 aws s3 cp \
@@ -13,10 +11,16 @@ aws s3 cp \
   s3://docs.expo.io/_next/static/ \
   s3://docs.expo.io/_next/static/
 
-# Temporarily create a redirect for a page that Home links to
+declare -A redirects
 
-aws s3 cp \
-  --metadata-directive REPLACE \
-  --website-redirect /versions/latest/introduction/installation/ \
-  s3://docs.expo.io/versions/latest/introduction/installation.html \
-  s3://docs.expo.io/versions/latest/introduction/installation.html
+# Temporarily create a redirect for a page that Home links to
+redirects[versions/latest/introduction/installation.html]=versions/latest/introduction/installation/
+
+for i in "${!redirects[@]}
+do
+  aws s3 cp \
+    --metadata-directive REPLACE \
+    --website-redirect "/${redirects[$i]}" \
+    out/404.html \
+    "s3://docs.expo.io/$i"
+done
