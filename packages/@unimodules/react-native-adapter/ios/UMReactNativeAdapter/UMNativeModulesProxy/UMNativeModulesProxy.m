@@ -39,7 +39,7 @@ static const NSString *methodInfoArgumentsCountKey = @"argumentsCount";
 
 + (const NSString *)moduleName
 {
-  return @"ExpoNativeModuleProxy";
+  return @"NativeUnimoduleProxy";
 }
 
 # pragma mark - React API

@@ -7,7 +7,7 @@
 #define UM_RCT_REGISTER_MODULE(external_name) \
   + (const NSString *)moduleName { return @#external_name; } \
   UM_EXPORT_MODULE_WITH_CUSTOM_LOAD(external_name, \
-    RCT_UMTERN void RCTRegisterModule(Class); \
+    RCT_EXTERN void RCTRegisterModule(Class); \
     RCTRegisterModule(self); \
   )
 

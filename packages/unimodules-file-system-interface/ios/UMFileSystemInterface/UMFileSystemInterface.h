@@ -14,7 +14,7 @@ typedef NS_OPTIONS(unsigned int, UMFileSystemPermissionFlags) {
 @property (nonatomic, readonly) NSString *documentDirectory;
 @property (nonatomic, readonly) NSString *cachesDirectory;
 
-// TODO: Move permissionsForURI to EXFileSystemManagerInterface
+// TODO: Move permissionsForURI to UMFileSystemManagerInterface
 - (UMFileSystemPermissionFlags)permissionsForURI:(NSURL *)uri;
 - (NSString *)generatePathInDirectory:(NSString *)directory withExtension:(NSString *)extension;
 - (BOOL)ensureDirExistsWithPath:(NSString *)path;

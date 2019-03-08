@@ -1,1 +1,1 @@
-export * from 'expo-react-native-adapter';
+export * from '@unimodules/react-native-adapter';

@@ -6,8 +6,8 @@
 #define QUOTE(str) #str
 #define EXPAND_AND_QUOTE(str) QUOTE(str)
 
-#define UM_IS_METHOD_IMPORTED(methodName) \
-[methodName hasPrefix:@EXPAND_AND_QUOTE(UM_IMPORTED_METHODS_PREFIX)]
+#define UM_IS_METHOD_EXPORTED(methodName) \
+[methodName hasPrefix:@EXPAND_AND_QUOTE(UM_EXPORTED_METHODS_PREFIX)]
 
 static const NSString *noNameExceptionName = @"No custom +(const NSString *)exportedModuleName implementation.";
 static const NSString *noNameExceptionReasonFormat = @"You've subclassed an UMExportedModule in %@, but didn't override the +(const NSString *)exportedModuleName method. Override this method and return a name for your exported module.";
@@ -59,7 +59,7 @@ static dispatch_once_t selectorRegularExpressionOnceToken = 0;
   dispatch_once(&_methodQueueSetupOnce, ^{
     __strong UMExportedModule *strongSelf = weakSelf;
     if (strongSelf) {
-      NSString *queueName = [NSString stringWithFormat:@"expo.modules.%@Queue", [[strongSelf class] exportedModuleName]];
+      NSString *queueName = [NSString stringWithFormat:@"org.unimodules.%@Queue", [[strongSelf class] exportedModuleName]];
       strongSelf.methodQueue = dispatch_queue_create(queueName.UTF8String, DISPATCH_QUEUE_SERIAL);
     }
   });
@@ -87,7 +87,7 @@ static dispatch_once_t selectorRegularExpressionOnceToken = 0;
         Method method = methodsDescriptions[i];
         SEL methodSelector = method_getName(method);
         NSString *methodName = NSStringFromSelector(methodSelector);
-        if (UM_IS_METHOD_IMPORTED(methodName)) {
+        if (UM_IS_METHOD_EXPORTED(methodName)) {
           IMP imp = method_getImplementation(method);
           const UMMethodInfo *info = ((const UMMethodInfo *(*)(id, SEL))imp)(klass, methodSelector);
           NSString *fullSelectorName = [NSString stringWithUTF8String:info->objcName];

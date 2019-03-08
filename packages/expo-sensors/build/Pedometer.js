@@ -1,4 +1,4 @@
-import { EventEmitter } from 'expo-core';
+import { EventEmitter } from '@unimodules/core';
 import invariant from 'invariant';
 import { UnavailabilityError } from 'expo-errors';
 import ExponentPedometer from './ExponentPedometer';

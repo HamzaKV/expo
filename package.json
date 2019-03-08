@@ -19,6 +19,7 @@
       "expokit-npm-package",
       "home",
       "packages/*",
+      "packages/@unimodules/*",
       "react-native-lab/react-native"
     ]
   },

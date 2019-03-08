@@ -1337,6 +1337,20 @@
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.14.tgz#37daaf78069e7948520474c87b80092ea912520a"
   integrity sha512-Q5hTcfdudEL2yOmluA1zaSyPbzWPmJ3XfSWeP3RyoYvS9hnje1ZyagrZOuQ6+1nQC1Gw+7gap3pLNL3xL6UBug==
 
+"@types/lodash.omit@^4.5.4":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@types/lodash.omit/-/lodash.omit-4.5.6.tgz#f2a9518259e481a48ff7ec423420fa8fd58933e2"
+  integrity sha512-KXPpOSNX2h0DAG2w7ajpk7TXvWF28ZHs5nJhOJyP0BQHkehgr948RVsToItMme6oi0XJkp19CbuNXkIX8FiBlQ==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash.pick@^4.4.4":
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/@types/lodash.pick/-/lodash.pick-4.4.6.tgz#ae4e8f109e982786313bb6aac4b1a73aefa6e9be"
+  integrity sha512-u8bzA16qQ+8dY280z3aK7PoWb3fzX5ATJ0rJB6F+uqchOX2VYF02Aqa+8aYiHiHgPzQiITqCgeimlyKFy4OA6g==
+  dependencies:
+    "@types/lodash" "*"
+
 "@types/lodash.zipobject@^4.1.4":
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/@types/lodash.zipobject/-/lodash.zipobject-4.1.4.tgz#ab8db347e4ae0991e92ca7e207314d9283fc9f93"
@@ -5366,11 +5380,6 @@ expo-core@~2.0.0:
   resolved "https://registry.yarnpkg.com/expo-core/-/expo-core-2.0.1.tgz#b7437761adc40ac7689043327c287b6413d0fabd"
   integrity sha512-BmQqSHThhnI2xSEWFm4J0uQv5iATwLcY2A0pArjUOT+JK0h2V3x2lt0EZFekjrKwZwIPOwyEYFO1Drzn41Oxsg==
 
-expo-core@~3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/expo-core/-/expo-core-3.0.1.tgz#500ec72ff2eb3dbdf91a7074f89e70b67293330d"
-  integrity sha512-tVg/AHDOGzRAgjyfPmsKorvI1igWAg7aYLKIjj5m7VwSMP5MuF8BYglztTd/b+zULaN8dm2YUor+KoAK9Xn+HA==
-
 expo-face-detector-interface@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/expo-face-detector-interface/-/expo-face-detector-interface-3.0.0.tgz#f336bb715a169ef200e3af906e6f773aaa5789a8"
@@ -5425,16 +5434,6 @@ expo-react-native-adapter@~2.0.0:
   dependencies:
     expo-image-loader-interface "~2.0.0"
     expo-permissions-interface "~2.0.0"
-    invariant "^2.2.4"
-    lodash.omit "^4.5.0"
-    lodash.pick "^4.4.0"
-    prop-types "^15.6.1"
-
-expo-react-native-adapter@~3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/expo-react-native-adapter/-/expo-react-native-adapter-3.0.1.tgz#6ff8c49610b4c6f43385060287910d5349a2e16e"
-  integrity sha512-QieqynpLzbYAaR8pEc3k6WsvD7xN9/hCgcYOwLihiwg43FX/yOJaIISIY9LqnT2AD9wkDKbMhz1We0KPezxtCg==
-  dependencies:
     invariant "^2.2.4"
     lodash.omit "^4.5.0"
     lodash.pick "^4.4.0"

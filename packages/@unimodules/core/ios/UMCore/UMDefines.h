@@ -1,17 +1,17 @@
 // Copyright © 2018 650 Industries. All rights reserved.
 
-#define UM_IMPORTED_METHODS_PREFIX __ex_export__
-#define UM_PROPSETTERS_PREFIX __ex_set__
+#define UM_EXPORTED_METHODS_PREFIX __um_export__
+#define UM_PROPSETTERS_PREFIX __um_set__
 
 #define UM_DO_CONCAT(A, B) A ## B
 #define UM_CONCAT(A, B) UM_DO_CONCAT(A, B)
 
-#define UM_IMPORT_METHOD_AS(external_name, method) \
-  _UM_UMTERN_METHOD(external_name, method) \
+#define UM_EXPORT_METHOD_AS(external_name, method) \
+  _UM_EXTERN_METHOD(external_name, method) \
   - (void)method
 
-#define _UM_UMTERN_METHOD(external_name, method) \
-  + (const UMMethodInfo *)UM_CONCAT(UM_IMPORTED_METHODS_PREFIX, UM_CONCAT(external_name, UM_CONCAT(__LINE__, __COUNTER__))) { \
+#define _UM_EXTERN_METHOD(external_name, method) \
+  + (const UMMethodInfo *)UM_CONCAT(UM_EXPORTED_METHODS_PREFIX, UM_CONCAT(external_name, UM_CONCAT(__LINE__, __COUNTER__))) { \
   static UMMethodInfo config = {#external_name, #method}; \
   return &config; \
   }
@@ -26,12 +26,12 @@
     _custom_load_code \
   }
 
-#define UM_IMPORT_MODULE_WITH_CUSTOM_LOAD(external_name, _custom_load_code) \
+#define UM_EXPORT_MODULE_WITH_CUSTOM_LOAD(external_name, _custom_load_code) \
   _UM_DEFINE_CUSTOM_LOAD(_custom_load_code) \
   + (const NSString *)exportedModuleName { return @#external_name; }
 
-#define UM_IMPORT_MODULE(external_name) \
-  UM_IMPORT_MODULE_WITH_CUSTOM_LOAD(external_name,)
+#define UM_EXPORT_MODULE(external_name) \
+  UM_EXPORT_MODULE_WITH_CUSTOM_LOAD(external_name,)
 
 #define UM_REGISTER_MODULE(_custom_load_code) \
   _UM_DEFINE_CUSTOM_LOAD(_custom_load_code)

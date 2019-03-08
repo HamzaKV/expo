@@ -2,10 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import <EXCore/EXDefines.h>
+#import <UMCore/UMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-void EXRejectInvalidArgument(EXPromiseRejectBlock rejecter, NSString *message);
+void EXRejectInvalidArgument(UMPromiseRejectBlock rejecter, NSString *message);
 
 NS_ASSUME_NONNULL_END

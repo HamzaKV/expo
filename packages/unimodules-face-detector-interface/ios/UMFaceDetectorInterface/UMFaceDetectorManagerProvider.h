@@ -4,6 +4,6 @@
 
 @protocol UMFaceDetectorManagerProvider
 
-- (id<EXFaceDetectorManager>)createFaceDetectorManager;
+- (id<UMFaceDetectorManager>)createFaceDetectorManager;
 
 @end

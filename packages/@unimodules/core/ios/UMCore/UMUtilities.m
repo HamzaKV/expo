@@ -95,7 +95,7 @@ UM_REGISTER_MODULE();
   if ([self isMainQueue]) {
     dispatch_once(onceToken, block);
   } else {
-    if (DISPATCH_UMPECT(*onceToken == 0L, NO)) {
+    if (DISPATCH_EXPECT(*onceToken == 0L, NO)) {
       dispatch_sync(dispatch_get_main_queue(), ^{
         dispatch_once(onceToken, block);
       });

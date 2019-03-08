@@ -4,7 +4,7 @@
 
 @implementation EXLocalization
 
-EX_EXPORT_MODULE(ExpoLocalization)
+UM_EXPORT_MODULE(ExpoLocalization)
 
 - (NSMutableArray *)ensureLocaleTags:(NSArray *)locales
 {
@@ -15,9 +15,9 @@ EX_EXPORT_MODULE(ExpoLocalization)
     return sanitizedLocales;
 }
 
-EX_EXPORT_METHOD_AS(getLocalizationAsync,
-                    getLocalizationAsync:(EXPromiseResolveBlock)resolve
-                    rejecter:(EXPromiseRejectBlock)reject)
+UM_EXPORT_METHOD_AS(getLocalizationAsync,
+                    getLocalizationAsync:(UMPromiseResolveBlock)resolve
+                    rejecter:(UMPromiseRejectBlock)reject)
 {
   resolve([self constantsToExport]);
 }
