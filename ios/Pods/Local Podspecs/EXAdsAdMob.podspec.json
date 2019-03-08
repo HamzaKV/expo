@@ -16,7 +16,7 @@
   "preserve_paths": "EXAdsAdMob/**/*.{h,m}",
   "requires_arc": true,
   "dependencies": {
-    "EXCore": [
+    "UMCore": [
 
     ],
     "Google-Mobile-Ads-SDK": [

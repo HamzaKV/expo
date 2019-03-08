@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'React'
   s.dependency 'UMCore'
-  s.dependency 'EXFontInterface'
+  s.dependency 'UMFontInterface'
 end
 
   
